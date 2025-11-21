@@ -4,11 +4,25 @@
   <meta charset="UTF-8">
   <title>Fyrensci | Electronics & Accessories</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER / NAVBAR -->
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <p>Free shipping on orders over $50</p>
+      <p>Support: support@fyrensci.com</p>
+    </div>
+  </header>
+
+  <!-- MAIN NAVBAR -->
   <header class="header">
     <div class="container header-inner">
       <div class="logo">
@@ -31,46 +45,65 @@
     <section id="home" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <h1>Smart tech for everyday life.</h1>
+          <h1>Feel the power of Fyrensci audio.</h1>
           <p>
-            Fyrensci brings you reliable electronics and accessories with a clean, modern design.
+            Sleek headphones, bold speakers and smart accessories built for everyday performance.
           </p>
           <div class="hero-actions">
-            <a href="#products" class="btn-primary">Shop Products</a>
-            <a href="#categories" class="btn-outline">Browse Categories</a>
+            <a href="#products" class="btn-primary">Shop now</a>
+            <a href="#categories" class="btn-outline">Explore categories</a>
           </div>
         </div>
-        <div class="hero-image">
-          <!-- Placeholder image – replace with your own later -->
-          <div class="hero-device">
-            <span class="tag">New</span>
-            <h3>Fyrensci Wireless Headphones</h3>
-            <p>Pure sound. All day battery.</p>
+        <div class="hero-showcase">
+          <div class="hero-product">
+            <span class="badge">New</span>
+            <div class="hero-product-body">
+              <h3>Fyrensci Alpha Wireless</h3>
+              <p>Deep bass · 30h battery · Noise isolation</p>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>30h</strong>
+              <span>Battery life</span>
+            </div>
+            <div>
+              <strong>BT 5.3</strong>
+              <span>Stable connection</span>
+            </div>
+            <div>
+              <strong>1 Year</strong>
+              <span>Warranty</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CATEGORIES SECTION -->
+    <!-- CATEGORIES -->
     <section id="categories" class="section bg-light">
       <div class="container">
-        <h2 class="section-title">Shop by Category</h2>
+        <h2 class="section-title">Shop by category</h2>
         <div class="category-grid">
           <article class="category-card">
-            <h3>Audio</h3>
-            <p>Headphones, speakers and soundbars.</p>
+            <div class="category-icon">🎧</div>
+            <h3>Headphones</h3>
+            <p>Over‑ear, on‑ear and in‑ear audio solutions.</p>
           </article>
           <article class="category-card">
+            <div class="category-icon">📢</div>
+            <h3>Speakers</h3>
+            <p>Portable and home speakers with powerful sound.</p>
+          </article>
+          <article class="category-card">
+            <div class="category-icon">🔌</div>
             <h3>Accessories</h3>
-            <p>Cables, chargers, power banks.</p>
+            <p>Cables, chargers, power banks and more.</p>
           </article>
           <article class="category-card">
-            <h3>Smart Gadgets</h3>
-            <p>Wearables and home devices.</p>
-          </article>
-          <article class="category-card">
+            <div class="category-icon">🎮</div>
             <h3>Gaming</h3>
-            <p>Headsets, controllers & more.</p>
+            <p>Headsets and gear for immersive gaming.</p>
           </article>
         </div>
       </div>
@@ -79,63 +112,67 @@
     <!-- FEATURED PRODUCTS -->
     <section id="products" class="section">
       <div class="container">
-        <h2 class="section-title">Featured Products</h2>
+        <div class="section-header">
+          <h2 class="section-title">Featured products</h2>
+          <a href="#contact" class="section-link">Need a reseller? Contact us →</a>
+        </div>
+
         <div class="product-grid">
 
           <!-- PRODUCT 1 -->
           <article class="product-card">
             <div class="product-badge">New</div>
-            <div class="product-image"></div>
+            <div class="product-image product-image-1"></div>
             <div class="product-body">
-              <h3>Fyrensci Wireless Headphones</h3>
-              <p>Comfortable over-ear design with deep bass and 30h battery.</p>
+              <h3>Alpha Wireless Headphones</h3>
+              <p>Comfortable over‑ear design with deep bass and 30h battery.</p>
               <div class="product-meta">
                 <span class="price">$79.99</span>
-                <span class="tagline">Wireless · Bluetooth 5.0</span>
+                <span class="tagline">Wireless · Bluetooth 5.3</span>
               </div>
-              <a href="#" class="btn-secondary">View details</a>
+              <button class="btn-secondary">View details</button>
             </div>
           </article>
 
           <!-- PRODUCT 2 -->
           <article class="product-card">
-            <div class="product-image"></div>
+            <div class="product-image product-image-2"></div>
             <div class="product-body">
-              <h3>Portable Bluetooth Speaker</h3>
-              <p>Compact, powerful sound with splash‑resistant design.</p>
+              <h3>Pulse Bluetooth Speaker</h3>
+              <p>Portable, water‑resistant speaker with rich 360° sound.</p>
               <div class="product-meta">
-                <span class="price">$49.99</span>
-                <span class="tagline">Portable · 12h battery</span>
+                <span class="price">$59.99</span>
+                <span class="tagline">IPX5 · 16h battery</span>
               </div>
-              <a href="#" class="btn-secondary">View details</a>
+              <button class="btn-secondary">View details</button>
             </div>
           </article>
 
           <!-- PRODUCT 3 -->
           <article class="product-card">
-            <div class="product-image"></div>
+            <div class="product-image product-image-3"></div>
             <div class="product-body">
-              <h3>Fast USB‑C Charger</h3>
-              <p>Quick charge your devices safely with 30W power.</p>
+              <h3>Swift USB‑C Charger</h3>
+              <p>Quick charge your devices safely with 30W PD output.</p>
               <div class="product-meta">
                 <span class="price">$24.99</span>
                 <span class="tagline">USB‑C · Fast Charge</span>
               </div>
-              <a href="#" class="btn-secondary">View details</a>
+              <button class="btn-secondary">View details</button>
             </div>
           </article>
 
           <!-- PRODUCT 4 -->
           <article class="product-card">
-            <div class="product-image"></div>
+            <div class="product-image product-image-4"></div>
             <div class="product-body">
-              <h3>Noise‑Isolating Earbuds</h3>
-              <p>Lightweight in‑ear earphones with clear sound.</p>
+              <h3>Core In‑Ear Earphones</h3>
+              <p>Lightweight wired earphones with clear, balanced sound.</p>
               <div class="product-meta">
-                <span class="price">$29.99</span>
-                <span class="tagline">In‑Ear · Wired</span>
+                <span class="price">$19.99</span>
+                <span class="tagline">In‑Ear · 3.5mm jack</span>
               </div>
-              <a href="#" class="btn-secondary">View details</a>
+              <button class="btn-secondary">View details</button>
             </div>
           </article>
 
@@ -143,12 +180,12 @@
       </div>
     </section>
 
-    <!-- PROMO BANNER -->
+    <!-- PROMO / NEWSLETTER -->
     <section class="promo">
       <div class="container promo-inner">
         <div>
-          <h2>Stay updated on Fyrensci deals.</h2>
-          <p>Sign up to get news on new arrivals and special offers.</p>
+          <h2>Stay updated with Fyrensci.</h2>
+          <p>Be the first to know about new launches and exclusive offers.</p>
         </div>
         <form class="promo-form">
           <input type="email" placeholder="Enter your email">
@@ -157,21 +194,21 @@
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT -->
     <section id="about" class="section bg-light">
       <div class="container">
         <h2 class="section-title">About Fyrensci</h2>
         <p class="text-block">
-          Fyrensci is dedicated to bringing you modern, reliable electronics and accessories 
-          at accessible prices. We focus on clean design, strong performance and everyday usability.
+          Fyrensci delivers modern electronics and accessories designed to match your lifestyle.
+          From audio to charging, we focus on clean design, strong performance and everyday reliability.
         </p>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
-        <h2 class="section-title">Contact Us</h2>
+        <h2 class="section-title">Contact us</h2>
         <form class="contact-form">
           <div class="form-row">
             <div class="form-group">
@@ -185,9 +222,9 @@
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="4" placeholder="How can we help?"></textarea>
+            <textarea id="message" rows="4" placeholder="Tell us what you need (products, partnership, support…)"></textarea>
           </div>
-          <button type="submit" class="btn-primary">Send Message</button>
+          <button type="submit" class="btn-primary">Send message</button>
         </form>
       </div>
     </section>
